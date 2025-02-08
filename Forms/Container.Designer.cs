@@ -50,6 +50,7 @@ namespace _4RTools.Forms
             this.labelProfile = new System.Windows.Forms.Label();
             this.profileCB = new System.Windows.Forms.ComboBox();
             this.panelFooter = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.websiteLinkLabel = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -254,6 +255,7 @@ namespace _4RTools.Forms
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelFooter.Controls.Add(this.label2);
             this.panelFooter.Controls.Add(this.websiteLinkLabel);
             this.panelFooter.Controls.Add(this.panel1);
             this.panelFooter.Controls.Add(this.lblLinkGithub);
@@ -265,24 +267,33 @@ namespace _4RTools.Forms
             this.panelFooter.Size = new System.Drawing.Size(903, 43);
             this.panelFooter.TabIndex = 16;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(535, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "by: Qnomon";
+            // 
             // websiteLinkLabel
             // 
             this.websiteLinkLabel.AutoSize = true;
             this.websiteLinkLabel.Location = new System.Drawing.Point(403, 16);
             this.websiteLinkLabel.Name = "websiteLinkLabel";
-            this.websiteLinkLabel.Size = new System.Drawing.Size(91, 13);
+            this.websiteLinkLabel.Size = new System.Drawing.Size(62, 13);
             this.websiteLinkLabel.TabIndex = 12;
             this.websiteLinkLabel.TabStop = true;
-            this.websiteLinkLabel.Text = "WebSite 4RTools";
+            this.websiteLinkLabel.Text = "Korppi GRF";
             this.websiteLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.websiteLinkLabel_LinkClicked);
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.panel1.Location = new System.Drawing.Point(366, 6);
+            this.panel1.Location = new System.Drawing.Point(356, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(32, 33);
+            this.panel1.Size = new System.Drawing.Size(41, 40);
             this.panel1.TabIndex = 13;
             // 
             // panel4
@@ -372,9 +383,9 @@ namespace _4RTools.Forms
             // 
             // panelAdvertisement
             // 
-            this.panelAdvertisement.Location = new System.Drawing.Point(596, 24);
+            this.panelAdvertisement.Location = new System.Drawing.Point(878, 570);
             this.panelAdvertisement.Name = "panelAdvertisement";
-            this.panelAdvertisement.Size = new System.Drawing.Size(292, 556);
+            this.panelAdvertisement.Size = new System.Drawing.Size(10, 10);
             this.panelAdvertisement.TabIndex = 26;
             // 
             // Container
@@ -382,7 +393,7 @@ namespace _4RTools.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(900, 624);
+            this.ClientSize = new System.Drawing.Size(593, 624);
             this.Controls.Add(this.panelAdvertisement);
             this.Controls.Add(this.tabControlAutopot);
             this.Controls.Add(this.panelFooter);
@@ -448,5 +459,6 @@ namespace _4RTools.Forms
         private TabPage tabPageSkillTimer;
         private TabPage tabPageServer;
         private Panel panelAdvertisement;
+        private Label label2;
     }
 }

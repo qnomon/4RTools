@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacroSwitchForm));
             this.in1mac1 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.in1mac1delay = new System.Windows.Forms.NumericUpDown();
@@ -61,12 +59,26 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.in5mac1 = new System.Windows.Forms.TextBox();
             this.chainGroup1 = new System.Windows.Forms.GroupBox();
+            this.in7mac1click = new System.Windows.Forms.CheckBox();
+            this.in6mac1click = new System.Windows.Forms.CheckBox();
+            this.in5mac1click = new System.Windows.Forms.CheckBox();
+            this.in4mac1click = new System.Windows.Forms.CheckBox();
+            this.in3mac1click = new System.Windows.Forms.CheckBox();
+            this.in2mac1click = new System.Windows.Forms.CheckBox();
+            this.in1mac1click = new System.Windows.Forms.CheckBox();
             this.chainGroup2 = new System.Windows.Forms.GroupBox();
+            this.in7mac2click = new System.Windows.Forms.CheckBox();
             this.in1mac2 = new System.Windows.Forms.TextBox();
+            this.in6mac2click = new System.Windows.Forms.CheckBox();
             this.in7mac2 = new System.Windows.Forms.TextBox();
+            this.in5mac2click = new System.Windows.Forms.CheckBox();
             this.in6mac2 = new System.Windows.Forms.TextBox();
+            this.in4mac2click = new System.Windows.Forms.CheckBox();
             this.in2mac2 = new System.Windows.Forms.TextBox();
+            this.in3mac2click = new System.Windows.Forms.CheckBox();
             this.in5mac2 = new System.Windows.Forms.TextBox();
+            this.in2mac2click = new System.Windows.Forms.CheckBox();
+            this.in1mac2click = new System.Windows.Forms.CheckBox();
             this.in3mac2 = new System.Windows.Forms.TextBox();
             this.in4mac2 = new System.Windows.Forms.TextBox();
             this.in7mac2delay = new System.Windows.Forms.NumericUpDown();
@@ -92,11 +104,18 @@
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.chainGroup3 = new System.Windows.Forms.GroupBox();
+            this.in7mac3click = new System.Windows.Forms.CheckBox();
             this.in1mac3 = new System.Windows.Forms.TextBox();
+            this.in6mac3click = new System.Windows.Forms.CheckBox();
             this.in7mac3 = new System.Windows.Forms.TextBox();
+            this.in5mac3click = new System.Windows.Forms.CheckBox();
             this.in6mac3 = new System.Windows.Forms.TextBox();
+            this.in4mac3click = new System.Windows.Forms.CheckBox();
             this.in2mac3 = new System.Windows.Forms.TextBox();
+            this.in3mac3click = new System.Windows.Forms.CheckBox();
             this.in5mac3 = new System.Windows.Forms.TextBox();
+            this.in2mac3click = new System.Windows.Forms.CheckBox();
+            this.in1mac3click = new System.Windows.Forms.CheckBox();
             this.in3mac3 = new System.Windows.Forms.TextBox();
             this.in4mac3 = new System.Windows.Forms.TextBox();
             this.in7mac3delay = new System.Windows.Forms.NumericUpDown();
@@ -205,18 +224,13 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox3.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox3.Location = new System.Drawing.Point(112, 38);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 195;
             this.pictureBox3.TabStop = false;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // label5
             // 
@@ -262,7 +276,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox4.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox4.Location = new System.Drawing.Point(181, 38);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(21, 41);
@@ -301,7 +315,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox6.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox6.Location = new System.Drawing.Point(319, 38);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(21, 41);
@@ -340,7 +354,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox8.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox8.Location = new System.Drawing.Point(250, 38);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(21, 41);
@@ -408,7 +422,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox12.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox12.Location = new System.Drawing.Point(457, 38);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(21, 41);
@@ -447,7 +461,7 @@
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox14.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox14.Location = new System.Drawing.Point(388, 38);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(21, 41);
@@ -474,6 +488,13 @@
             // 
             // chainGroup1
             // 
+            this.chainGroup1.Controls.Add(this.in7mac1click);
+            this.chainGroup1.Controls.Add(this.in6mac1click);
+            this.chainGroup1.Controls.Add(this.in5mac1click);
+            this.chainGroup1.Controls.Add(this.in4mac1click);
+            this.chainGroup1.Controls.Add(this.in3mac1click);
+            this.chainGroup1.Controls.Add(this.in2mac1click);
+            this.chainGroup1.Controls.Add(this.in1mac1click);
             this.chainGroup1.Controls.Add(this.in1mac1);
             this.chainGroup1.Controls.Add(this.in7mac1);
             this.chainGroup1.Controls.Add(this.in6mac1);
@@ -510,13 +531,90 @@
             this.chainGroup1.TabStop = false;
             this.chainGroup1.Text = "Switch 1";
             // 
+            // in7mac1click
+            // 
+            this.in7mac1click.AutoSize = true;
+            this.in7mac1click.Location = new System.Drawing.Point(477, 95);
+            this.in7mac1click.Name = "in7mac1click";
+            this.in7mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in7mac1click.TabIndex = 287;
+            this.in7mac1click.Text = "Click";
+            this.in7mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in6mac1click
+            // 
+            this.in6mac1click.AutoSize = true;
+            this.in6mac1click.Location = new System.Drawing.Point(408, 95);
+            this.in6mac1click.Name = "in6mac1click";
+            this.in6mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in6mac1click.TabIndex = 286;
+            this.in6mac1click.Text = "Click";
+            this.in6mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in5mac1click
+            // 
+            this.in5mac1click.AutoSize = true;
+            this.in5mac1click.Location = new System.Drawing.Point(339, 95);
+            this.in5mac1click.Name = "in5mac1click";
+            this.in5mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in5mac1click.TabIndex = 285;
+            this.in5mac1click.Text = "Click";
+            this.in5mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in4mac1click
+            // 
+            this.in4mac1click.AutoSize = true;
+            this.in4mac1click.Location = new System.Drawing.Point(270, 95);
+            this.in4mac1click.Name = "in4mac1click";
+            this.in4mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in4mac1click.TabIndex = 284;
+            this.in4mac1click.Text = "Click";
+            this.in4mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in3mac1click
+            // 
+            this.in3mac1click.AutoSize = true;
+            this.in3mac1click.Location = new System.Drawing.Point(201, 95);
+            this.in3mac1click.Name = "in3mac1click";
+            this.in3mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in3mac1click.TabIndex = 283;
+            this.in3mac1click.Text = "Click";
+            this.in3mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in2mac1click
+            // 
+            this.in2mac1click.AutoSize = true;
+            this.in2mac1click.Location = new System.Drawing.Point(132, 95);
+            this.in2mac1click.Name = "in2mac1click";
+            this.in2mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in2mac1click.TabIndex = 282;
+            this.in2mac1click.Text = "Click";
+            this.in2mac1click.UseVisualStyleBackColor = true;
+            // 
+            // in1mac1click
+            // 
+            this.in1mac1click.AutoSize = true;
+            this.in1mac1click.Location = new System.Drawing.Point(63, 95);
+            this.in1mac1click.Name = "in1mac1click";
+            this.in1mac1click.Size = new System.Drawing.Size(49, 17);
+            this.in1mac1click.TabIndex = 281;
+            this.in1mac1click.Text = "Click";
+            this.in1mac1click.UseVisualStyleBackColor = true;
+            // 
             // chainGroup2
             // 
+            this.chainGroup2.Controls.Add(this.in7mac2click);
             this.chainGroup2.Controls.Add(this.in1mac2);
+            this.chainGroup2.Controls.Add(this.in6mac2click);
             this.chainGroup2.Controls.Add(this.in7mac2);
+            this.chainGroup2.Controls.Add(this.in5mac2click);
             this.chainGroup2.Controls.Add(this.in6mac2);
+            this.chainGroup2.Controls.Add(this.in4mac2click);
             this.chainGroup2.Controls.Add(this.in2mac2);
+            this.chainGroup2.Controls.Add(this.in3mac2click);
             this.chainGroup2.Controls.Add(this.in5mac2);
+            this.chainGroup2.Controls.Add(this.in2mac2click);
+            this.chainGroup2.Controls.Add(this.in1mac2click);
             this.chainGroup2.Controls.Add(this.in3mac2);
             this.chainGroup2.Controls.Add(this.in4mac2);
             this.chainGroup2.Controls.Add(this.in7mac2delay);
@@ -548,12 +646,32 @@
             this.chainGroup2.TabStop = false;
             this.chainGroup2.Text = "Switch 2";
             // 
+            // in7mac2click
+            // 
+            this.in7mac2click.AutoSize = true;
+            this.in7mac2click.Location = new System.Drawing.Point(477, 94);
+            this.in7mac2click.Name = "in7mac2click";
+            this.in7mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in7mac2click.TabIndex = 294;
+            this.in7mac2click.Text = "Click";
+            this.in7mac2click.UseVisualStyleBackColor = true;
+            // 
             // in1mac2
             // 
             this.in1mac2.Location = new System.Drawing.Point(63, 34);
             this.in1mac2.Name = "in1mac2";
             this.in1mac2.Size = new System.Drawing.Size(49, 20);
             this.in1mac2.TabIndex = 182;
+            // 
+            // in6mac2click
+            // 
+            this.in6mac2click.AutoSize = true;
+            this.in6mac2click.Location = new System.Drawing.Point(408, 94);
+            this.in6mac2click.Name = "in6mac2click";
+            this.in6mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in6mac2click.TabIndex = 293;
+            this.in6mac2click.Text = "Click";
+            this.in6mac2click.UseVisualStyleBackColor = true;
             // 
             // in7mac2
             // 
@@ -562,12 +680,32 @@
             this.in7mac2.Size = new System.Drawing.Size(49, 20);
             this.in7mac2.TabIndex = 277;
             // 
+            // in5mac2click
+            // 
+            this.in5mac2click.AutoSize = true;
+            this.in5mac2click.Location = new System.Drawing.Point(339, 94);
+            this.in5mac2click.Name = "in5mac2click";
+            this.in5mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in5mac2click.TabIndex = 292;
+            this.in5mac2click.Text = "Click";
+            this.in5mac2click.UseVisualStyleBackColor = true;
+            // 
             // in6mac2
             // 
             this.in6mac2.Location = new System.Drawing.Point(408, 34);
             this.in6mac2.Name = "in6mac2";
             this.in6mac2.Size = new System.Drawing.Size(49, 20);
             this.in6mac2.TabIndex = 273;
+            // 
+            // in4mac2click
+            // 
+            this.in4mac2click.AutoSize = true;
+            this.in4mac2click.Location = new System.Drawing.Point(270, 94);
+            this.in4mac2click.Name = "in4mac2click";
+            this.in4mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in4mac2click.TabIndex = 291;
+            this.in4mac2click.Text = "Click";
+            this.in4mac2click.UseVisualStyleBackColor = true;
             // 
             // in2mac2
             // 
@@ -576,12 +714,42 @@
             this.in2mac2.Size = new System.Drawing.Size(49, 20);
             this.in2mac2.TabIndex = 257;
             // 
+            // in3mac2click
+            // 
+            this.in3mac2click.AutoSize = true;
+            this.in3mac2click.Location = new System.Drawing.Point(201, 94);
+            this.in3mac2click.Name = "in3mac2click";
+            this.in3mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in3mac2click.TabIndex = 290;
+            this.in3mac2click.Text = "Click";
+            this.in3mac2click.UseVisualStyleBackColor = true;
+            // 
             // in5mac2
             // 
             this.in5mac2.Location = new System.Drawing.Point(339, 34);
             this.in5mac2.Name = "in5mac2";
             this.in5mac2.Size = new System.Drawing.Size(49, 20);
             this.in5mac2.TabIndex = 269;
+            // 
+            // in2mac2click
+            // 
+            this.in2mac2click.AutoSize = true;
+            this.in2mac2click.Location = new System.Drawing.Point(132, 94);
+            this.in2mac2click.Name = "in2mac2click";
+            this.in2mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in2mac2click.TabIndex = 289;
+            this.in2mac2click.Text = "Click";
+            this.in2mac2click.UseVisualStyleBackColor = true;
+            // 
+            // in1mac2click
+            // 
+            this.in1mac2click.AutoSize = true;
+            this.in1mac2click.Location = new System.Drawing.Point(63, 94);
+            this.in1mac2click.Name = "in1mac2click";
+            this.in1mac2click.Size = new System.Drawing.Size(49, 17);
+            this.in1mac2click.TabIndex = 288;
+            this.in1mac2click.Text = "Click";
+            this.in1mac2click.UseVisualStyleBackColor = true;
             // 
             // in3mac2
             // 
@@ -771,7 +939,7 @@
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox21.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox21.Location = new System.Drawing.Point(112, 38);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(21, 41);
@@ -781,7 +949,7 @@
             // 
             // pictureBox22
             // 
-            this.pictureBox22.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox22.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox22.Location = new System.Drawing.Point(181, 38);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(21, 41);
@@ -791,7 +959,7 @@
             // 
             // pictureBox23
             // 
-            this.pictureBox23.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox23.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox23.Location = new System.Drawing.Point(250, 38);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(21, 41);
@@ -801,7 +969,7 @@
             // 
             // pictureBox24
             // 
-            this.pictureBox24.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox24.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox24.Location = new System.Drawing.Point(319, 38);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(21, 41);
@@ -811,7 +979,7 @@
             // 
             // pictureBox25
             // 
-            this.pictureBox25.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox25.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox25.Location = new System.Drawing.Point(388, 38);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(21, 41);
@@ -821,7 +989,7 @@
             // 
             // pictureBox26
             // 
-            this.pictureBox26.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox26.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox26.Location = new System.Drawing.Point(457, 38);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(21, 41);
@@ -831,11 +999,18 @@
             // 
             // chainGroup3
             // 
+            this.chainGroup3.Controls.Add(this.in7mac3click);
             this.chainGroup3.Controls.Add(this.in1mac3);
+            this.chainGroup3.Controls.Add(this.in6mac3click);
             this.chainGroup3.Controls.Add(this.in7mac3);
+            this.chainGroup3.Controls.Add(this.in5mac3click);
             this.chainGroup3.Controls.Add(this.in6mac3);
+            this.chainGroup3.Controls.Add(this.in4mac3click);
             this.chainGroup3.Controls.Add(this.in2mac3);
+            this.chainGroup3.Controls.Add(this.in3mac3click);
             this.chainGroup3.Controls.Add(this.in5mac3);
+            this.chainGroup3.Controls.Add(this.in2mac3click);
+            this.chainGroup3.Controls.Add(this.in1mac3click);
             this.chainGroup3.Controls.Add(this.in3mac3);
             this.chainGroup3.Controls.Add(this.in4mac3);
             this.chainGroup3.Controls.Add(this.in7mac3delay);
@@ -867,12 +1042,32 @@
             this.chainGroup3.TabStop = false;
             this.chainGroup3.Text = "Switch 3";
             // 
+            // in7mac3click
+            // 
+            this.in7mac3click.AutoSize = true;
+            this.in7mac3click.Location = new System.Drawing.Point(477, 95);
+            this.in7mac3click.Name = "in7mac3click";
+            this.in7mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in7mac3click.TabIndex = 301;
+            this.in7mac3click.Text = "Click";
+            this.in7mac3click.UseVisualStyleBackColor = true;
+            // 
             // in1mac3
             // 
             this.in1mac3.Location = new System.Drawing.Point(63, 34);
             this.in1mac3.Name = "in1mac3";
             this.in1mac3.Size = new System.Drawing.Size(49, 20);
             this.in1mac3.TabIndex = 182;
+            // 
+            // in6mac3click
+            // 
+            this.in6mac3click.AutoSize = true;
+            this.in6mac3click.Location = new System.Drawing.Point(408, 95);
+            this.in6mac3click.Name = "in6mac3click";
+            this.in6mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in6mac3click.TabIndex = 300;
+            this.in6mac3click.Text = "Click";
+            this.in6mac3click.UseVisualStyleBackColor = true;
             // 
             // in7mac3
             // 
@@ -881,12 +1076,32 @@
             this.in7mac3.Size = new System.Drawing.Size(49, 20);
             this.in7mac3.TabIndex = 277;
             // 
+            // in5mac3click
+            // 
+            this.in5mac3click.AutoSize = true;
+            this.in5mac3click.Location = new System.Drawing.Point(339, 95);
+            this.in5mac3click.Name = "in5mac3click";
+            this.in5mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in5mac3click.TabIndex = 299;
+            this.in5mac3click.Text = "Click";
+            this.in5mac3click.UseVisualStyleBackColor = true;
+            // 
             // in6mac3
             // 
             this.in6mac3.Location = new System.Drawing.Point(408, 34);
             this.in6mac3.Name = "in6mac3";
             this.in6mac3.Size = new System.Drawing.Size(49, 20);
             this.in6mac3.TabIndex = 273;
+            // 
+            // in4mac3click
+            // 
+            this.in4mac3click.AutoSize = true;
+            this.in4mac3click.Location = new System.Drawing.Point(270, 95);
+            this.in4mac3click.Name = "in4mac3click";
+            this.in4mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in4mac3click.TabIndex = 298;
+            this.in4mac3click.Text = "Click";
+            this.in4mac3click.UseVisualStyleBackColor = true;
             // 
             // in2mac3
             // 
@@ -895,12 +1110,42 @@
             this.in2mac3.Size = new System.Drawing.Size(49, 20);
             this.in2mac3.TabIndex = 257;
             // 
+            // in3mac3click
+            // 
+            this.in3mac3click.AutoSize = true;
+            this.in3mac3click.Location = new System.Drawing.Point(201, 95);
+            this.in3mac3click.Name = "in3mac3click";
+            this.in3mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in3mac3click.TabIndex = 297;
+            this.in3mac3click.Text = "Click";
+            this.in3mac3click.UseVisualStyleBackColor = true;
+            // 
             // in5mac3
             // 
             this.in5mac3.Location = new System.Drawing.Point(339, 34);
             this.in5mac3.Name = "in5mac3";
             this.in5mac3.Size = new System.Drawing.Size(49, 20);
             this.in5mac3.TabIndex = 269;
+            // 
+            // in2mac3click
+            // 
+            this.in2mac3click.AutoSize = true;
+            this.in2mac3click.Location = new System.Drawing.Point(132, 95);
+            this.in2mac3click.Name = "in2mac3click";
+            this.in2mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in2mac3click.TabIndex = 296;
+            this.in2mac3click.Text = "Click";
+            this.in2mac3click.UseVisualStyleBackColor = true;
+            // 
+            // in1mac3click
+            // 
+            this.in1mac3click.AutoSize = true;
+            this.in1mac3click.Location = new System.Drawing.Point(63, 95);
+            this.in1mac3click.Name = "in1mac3click";
+            this.in1mac3click.Size = new System.Drawing.Size(49, 17);
+            this.in1mac3click.TabIndex = 295;
+            this.in1mac3click.Text = "Click";
+            this.in1mac3click.UseVisualStyleBackColor = true;
             // 
             // in3mac3
             // 
@@ -1090,7 +1335,7 @@
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox34.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox34.Location = new System.Drawing.Point(112, 38);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(21, 41);
@@ -1100,7 +1345,7 @@
             // 
             // pictureBox35
             // 
-            this.pictureBox35.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox35.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox35.Location = new System.Drawing.Point(181, 38);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(21, 41);
@@ -1110,7 +1355,7 @@
             // 
             // pictureBox36
             // 
-            this.pictureBox36.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox36.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox36.Location = new System.Drawing.Point(250, 38);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(21, 41);
@@ -1120,7 +1365,7 @@
             // 
             // pictureBox37
             // 
-            this.pictureBox37.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox37.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox37.Location = new System.Drawing.Point(319, 38);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(21, 41);
@@ -1130,7 +1375,7 @@
             // 
             // pictureBox38
             // 
-            this.pictureBox38.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox38.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox38.Location = new System.Drawing.Point(388, 38);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(21, 41);
@@ -1140,7 +1385,7 @@
             // 
             // pictureBox39
             // 
-            this.pictureBox39.Image = Resources._4RTools.ETCResource.arrowup;
+            this.pictureBox39.Image = global::_4RTools.Resources._4RTools.ETCResource.arrowup;
             this.pictureBox39.Location = new System.Drawing.Point(457, 38);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(21, 41);
@@ -1323,5 +1568,26 @@
         private System.Windows.Forms.PictureBox pictureBox25;
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.NumericUpDown in7mac2delay;
+        private System.Windows.Forms.CheckBox in7mac1click;
+        private System.Windows.Forms.CheckBox in6mac1click;
+        private System.Windows.Forms.CheckBox in5mac1click;
+        private System.Windows.Forms.CheckBox in4mac1click;
+        private System.Windows.Forms.CheckBox in3mac1click;
+        private System.Windows.Forms.CheckBox in2mac1click;
+        private System.Windows.Forms.CheckBox in1mac1click;
+        private System.Windows.Forms.CheckBox in7mac2click;
+        private System.Windows.Forms.CheckBox in6mac2click;
+        private System.Windows.Forms.CheckBox in5mac2click;
+        private System.Windows.Forms.CheckBox in4mac2click;
+        private System.Windows.Forms.CheckBox in3mac2click;
+        private System.Windows.Forms.CheckBox in2mac2click;
+        private System.Windows.Forms.CheckBox in1mac2click;
+        private System.Windows.Forms.CheckBox in7mac3click;
+        private System.Windows.Forms.CheckBox in6mac3click;
+        private System.Windows.Forms.CheckBox in5mac3click;
+        private System.Windows.Forms.CheckBox in4mac3click;
+        private System.Windows.Forms.CheckBox in3mac3click;
+        private System.Windows.Forms.CheckBox in2mac3click;
+        private System.Windows.Forms.CheckBox in1mac3click;
     }
 }

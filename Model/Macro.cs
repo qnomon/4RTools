@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Newtonsoft.Json;
 using System.Threading;
 using _4RTools.Utils;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace _4RTools.Model
@@ -12,11 +13,13 @@ namespace _4RTools.Model
     {
         public Key key { get; set; }
         public int delay { get; set; } = 50;
+        public bool keySpammerWithClick { get; set; } = false;
 
-        public MacroKey(Key key, int delay)
+        public MacroKey(Key key, int delay, bool click)
         {
             this.key = key;
             this.delay = delay;
+            this.keySpammerWithClick = click;
         }
     }
 
@@ -27,6 +30,7 @@ namespace _4RTools.Model
         public Key daggerKey { get; set; }
         public Key instrumentKey { get; set; }
         public int delay { get; set; } = 50;
+        public bool keySpammerWithClick { get; set; } = true;
         public Dictionary<string, MacroKey> macroEntries { get; set; } = new Dictionary<string, MacroKey>();
 
         public ChainConfig() { }
@@ -43,7 +47,9 @@ namespace _4RTools.Model
             this.trigger = macro.trigger;
             this.daggerKey = macro.daggerKey;
             this.instrumentKey = macro.instrumentKey;
+            this.keySpammerWithClick = macro.keySpammerWithClick;
             this.macroEntries = new Dictionary<string, MacroKey>(macro.macroEntries);
+
         }
         public ChainConfig(int id, Key trigger)
         {
@@ -111,12 +117,27 @@ namespace _4RTools.Model
                                 Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, instrumentKey, 0);
                                 Thread.Sleep(30);
                             }
+                            if(macroKey.keySpammerWithClick)
+                            {
+                                Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
+                                Thread.Sleep(macroKey.delay);
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                                System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y - Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONDOWN, 0, 0);
+                                Thread.Sleep(1);
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_LBUTTONUP, 0, 0);
+                                System.Windows.Forms.Cursor.Position = new Point(System.Windows.Forms.Cursor.Position.X + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK, System.Windows.Forms.Cursor.Position.Y + Constants.MOUSE_DIAGONAL_MOVIMENTATION_PIXELS_AHK);
+                                Thread.Sleep(10);
+                                
+                            }
+                            else
+                            {
+                                Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
+                                Thread.Sleep(macroKey.delay);
+                                Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
+                            }
 
-                            Keys thisk = (Keys)Enum.Parse(typeof(Keys), macroKey.key.ToString());
-                            Thread.Sleep(macroKey.delay);
-                            Interop.PostMessage(roClient.process.MainWindowHandle, Constants.WM_KEYDOWN_MSG_ID, thisk, 0);
-
-                            if(chainConfig.daggerKey != Key.None)
+                            if (chainConfig.daggerKey != Key.None)
                             {
                                 //Press instrument key if exists.
                                 Keys daggerKey = (Keys)Enum.Parse(typeof(Keys), chainConfig.daggerKey.ToString());

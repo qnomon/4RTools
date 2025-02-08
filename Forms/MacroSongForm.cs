@@ -120,7 +120,7 @@ namespace _4RTools.Forms
             {
                 int macroID = short.Parse(textBox.Name.Split(new[] { "mac" }, StringSplitOptions.None)[1]);
                 ChainConfig chainConfig = SongMacro.chainConfigs.Find(songMacro => songMacro.id == macroID);
-                chainConfig.macroEntries[textBox.Name] = new MacroKey(key, chainConfig.delay);
+                chainConfig.macroEntries[textBox.Name] = new MacroKey(key, chainConfig.delay, false);
             }
 
             ProfileSingleton.SetConfiguration(SongMacro);
